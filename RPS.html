@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rock Paper Scissors</title>
+<link rel="stylesheet" href="./RPS.css">
+<script src="./RPS.js"></script>
+</head>
+
+<body>
+<h1 class="game-title">ROCK ✊ PAPER ✋ SCISSORS ✌️</h1>
+
+<div class="score-board">
+    <div class="score">
+        <div class="score-title">COMPUTER SCORE</div>
+        <div class="score-value" id="computer-score">0</div>
+    </div>
+    <div class="score">
+        <div class="score-title">YOUR SCORE</div>
+        <div class="score-value" id="player-score">0</div>
+    </div>
+</div>
+
+<div class="game-area">
+    <div class="choices">
+        <div class="choice" id="rock" data-choice="rock">
+            ✊
+            <span>Rock</span>
+        </div>
+        <div class="choice" id="paper" data-choice="paper">
+            ✋
+            <span>Paper</span>
+        </div>
+        <div class="choice" id="sis" data-choice="scissors">
+            ✌️
+            <span>Scissors</span>
+        </div>
+    </div>
+    <div class="result-area" id="result-area">
+        <div class="picks">
+            <div class="pick">
+                <div class="pick-title">YOU PICKED</div>
+                <div class="pick-display" id="player-pick">
+                    <span id="player-pick-emoji"></span>
+                    <span id="player-pick-text"></span>
+                </div>
+            </div>
+            <div class="pick">
+                <div class="pick-title">PC PICKED</div>
+                <div class="pick-display" id="computer-pick">
+                    <span id="computer-pick-emoji"></span>
+                    <span id="computer-pick-text"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="result-message" id="result-message">🎮 Let's play! 🎮</div>
+        <button class="play-again" id="play-again">PLAY AGAIN</button>
+    </div>
+
+    <div class="win-screen" id="win-screen">
+        <div class="win-title">HURRAY!!</div>
+        <div class="win-message">YOU WON THE GAME 🎉</div>
+        <button class="play-again" id="play-again-win">PLAY AGAIN</button>
+    </div>
+</div>
+
+<button class="rules-btn" id="rules-btn">RULES</button>
+
+<div class="rules-modal" id="rules-modal">
+    <div class="rules-content">
+        <span class="close-rules" id="close-rules">&times;</span>
+        <h2 class="rules-title">Game Rules</h2>
+        <ul class="rules-list">
+            <li>✊ Rock beats ✌️ Scissors</li>
+            <li>✌️ Scissors beat ✋ Paper</li>
+            <li>✋ Paper beats ✊ Rock</li>
+            <li>Play against the computer</li>
+            <li>First to score 15 points wins the game</li>
+        </ul>
+    </div>
+</div>
+</body>
+
+</html>
